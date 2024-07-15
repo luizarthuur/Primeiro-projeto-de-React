@@ -1,9 +1,15 @@
 import {CORE_CONCEPTS} from './data.js';
 import { Header } from './Components/Header/Header.jsx';
 import { CoreConcept } from './Components/CoreConcept.jsx';
+import { TabButton } from './Components/TabButton.jsx';
 
 
 function App() {
+
+  function handleClick (ComponentName) {
+    console.log(ComponentName)
+  }
+
   return (
     <div>
       <Header></Header>
@@ -35,6 +41,15 @@ function App() {
             img = {CORE_CONCEPTS[3].image} >
             </CoreConcept>
           </ul>
+        </section>
+        <section id = "examples">
+          <h2>Examples</h2>
+          <menu>
+            <TabButton onSelect={() => handleClick('Components')} >Components</TabButton>
+            <TabButton onSelect={() => handleClick ('JSX')}>JSX</TabButton>
+            <TabButton onSelect={() => handleClick ('Props')}>Props</TabButton>
+            <TabButton onSelect={() => handleClick ('State')}>State</TabButton>
+          </menu>
         </section>
         <h2>Time to get started!</h2>
       </main>      
