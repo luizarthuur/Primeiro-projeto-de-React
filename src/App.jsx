@@ -67,10 +67,10 @@ function App() {
         <section id = "examples">
           <h2>Examples</h2>
           <menu>
-            <TabButton onSelect={() => handleClick('components')} >Components</TabButton>
-            <TabButton onSelect={() => handleClick ('jsx')}>JSX</TabButton>
-            <TabButton onSelect={() => handleClick ('props')}>Props</TabButton>
-            <TabButton onSelect={() => handleClick ('state')}>State</TabButton>
+            <TabButton isSelected={selectedTopic === 'components' ? true : undefined} onSelect={() => handleClick('components')} >Components</TabButton>
+            <TabButton isSelected={selectedTopic === 'jsx' ? true : undefined} onSelect={() => handleClick ('jsx')}>JSX</TabButton>
+            <TabButton isSelected={selectedTopic === 'props' ? true : undefined} onSelect={() => handleClick ('props')}>Props</TabButton>
+            <TabButton isSelected={selectedTopic === 'state' ? true : undefined} onSelect={() => handleClick ('state')}>State</TabButton>
           </menu>
           {tabContent}
         </section>
