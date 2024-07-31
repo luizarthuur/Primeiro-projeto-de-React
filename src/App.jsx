@@ -39,7 +39,7 @@ function App() {
         <section id='core-concepts'>
           <h2>Core Concepts</h2>
           <ul>
-            <CoreConcept 
+          <CoreConcept 
             title = {CORE_CONCEPTS[0].title} 
             description= {CORE_CONCEPTS[0].description}
             img = {CORE_CONCEPTS[0].image} >
@@ -62,6 +62,7 @@ function App() {
             description= {CORE_CONCEPTS[3].description}
             img = {CORE_CONCEPTS[3].image} >
             </CoreConcept>
+
           </ul>
         </section>
         <section id = "examples">
