@@ -32,10 +32,13 @@ export default function Examples () {
     return (
         <>
         <Section title = "Examples" id = "examples">
-          <Tabs buttons = { <> <TabButton isSelected={selectedTopic === 'components' ? true : undefined} onClick={() => handleClick('components')} >Components</TabButton>
+          <Tabs 
+           buttons = 
+           { <> <TabButton isSelected={selectedTopic === 'components' ? true : undefined} onClick={() => handleClick('components')} >Components</TabButton>
           <TabButton isSelected={selectedTopic === 'jsx' ? true : undefined} onClick={() => handleClick ('jsx')}>JSX</TabButton>
           <TabButton isSelected={selectedTopic === 'props' ? true : undefined} onClick={() => handleClick ('props')}>Props</TabButton>
-          <TabButton isSelected={selectedTopic === 'state' ? true : undefined} onClick={() => handleClick ('state')}>State</TabButton> </>} >{tabContent}</Tabs>
+          <TabButton isSelected={selectedTopic === 'state' ? true : undefined} onClick={() => handleClick ('state')}>State</TabButton> </>}
+          >{tabContent}</Tabs>
       </Section>
       <h2>Time to get started!</h2>
       </>

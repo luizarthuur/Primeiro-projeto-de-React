@@ -1,9 +1,11 @@
-export function Tabs ({ children, buttons }) {
-    return <>
-    
-    <menu>
+export function Tabs ({ children, buttons, buttonsContainer = "menu" }) {
+
+    const ButtonsContainer = buttonsContainer
+
+    return <>    
+    <ButtonsContainer>
     {buttons}
-    </menu>
+    </ButtonsContainer>
     {children}
     </>
 }
